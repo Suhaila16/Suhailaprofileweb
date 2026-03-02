@@ -1,0 +1,116 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f4f6f9;
+    color: #333;
+    line-height: 1.7;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(90deg, #1565c0, #42a5f5);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+header h1 {
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+/* FOTO PROFIL */
+img {
+    display: block;
+    width: 180px;
+    height: 180px;
+    margin: 30px auto;
+    border-radius: 20px; /* bukan bulat lagi */
+    object-fit: cover;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+    transition: 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+/* SECTION TITLE */
+h2 {
+    width: 85%;
+    max-width: 900px;
+    margin: 40px auto 10px;
+    color: #1565c0;
+    font-size: 22px;
+}
+
+/* CARD STYLE */
+p, ul, ol {
+    width: 85%;
+    max-width: 900px;
+    margin: 10px auto 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+    transition: 0.3s;
+}
+
+p:hover, ul:hover, ol:hover {
+    transform: translateY(-4px);
+}
+
+/* LIST */
+li {
+    margin-bottom: 8px;
+}
+
+/* LINK */
+a {
+    text-decoration: none;
+    color: #1565c0;
+    font-weight: 500;
+}
+
+a:hover {
+    color: #e91e63;
+}
+
+/* FOOTER */
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+    background: #1565c0;
+    color: white;
+}
+
+/* HR */
+hr {
+    display: none;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    img {
+        width: 140px;
+        height: 140px;
+    }
+
+    h2, p, ul, ol {
+        width: 95%;
+    }
+
+    header h1 {
+        font-size: 22px;
+    }
+}
